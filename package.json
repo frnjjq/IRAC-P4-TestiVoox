@@ -1,0 +1,24 @@
+{
+  "name": "irac-p4-test-ivoox",
+  "version": "1.0.0",
+  "description": "Test for P4 of IRAC.",
+  "main": "index.js",
+  "scripts": {
+    "run": "nodejs index.js -i something -o ./test/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frnjjq/irac-p4-test-ivoox.git"
+  },
+  "author": "Francisco José Juan Quintanilla",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/frnjjq/irac-p4-test-ivoox/issues"
+  },
+  "homepage": "https://github.com/frnjjq/irac-p4-test-ivoox#readme",
+  "dependencies": {
+    "node-ivoox": "^1.1.0",
+    "request": "^2.81.0"
+  }
+}

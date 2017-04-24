@@ -36,11 +36,10 @@ ivoox.podcasts().then(function(data) {
 function saveFiles (data, fileDir) {
   data.forEach(function (val, index, array) {
     request(val.imgMain)
-      .on('response', function() {
-        console.log('Downloaded :', val.imgMain);
-      })
-      .pipe(fs.createWriteStream(fileDir+val.imgMain.slice(-8)));
+      .pipe(fs.createWriteStream(fileDir+val.imgMain.slice(-15)))
+      .on('close', function () {
+        console.log('Downloaded:', val.imgMain);
 
-
+      });
   });
 }

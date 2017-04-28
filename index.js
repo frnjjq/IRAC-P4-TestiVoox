@@ -50,5 +50,6 @@ function saveAudio (data, fileDir) {
     .on('close', () =>{
       console.log('Finished downloading');
       console.log('Finished - irac-p4-test-ivoox');
+      process.exit();
     });
 };

@@ -11,7 +11,7 @@ const rl = readline.createInterface({
 console.log('Running - irac-p4-test-ivoox');
 var toBeSearched, fileDir;
 
-process.argv.forEach(function (val, index, array) {
+process.argv.forEach((val, index, array) => {
   if(val === '-i' || val === '--input' ) {
     toBeSearched = array[index+1];
   } else if(val === '-o' || val === '--output') {
@@ -24,7 +24,7 @@ if (!toBeSearched || !fileDir) {
   process.exit();
 }
 
-ivoox.search(toBeSearched).then(function(data) {
+ivoox.search(toBeSearched).then((data) => {
   var answer;
   if(data.length > 1) {
     console.log('Your search produced the results:');

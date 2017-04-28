@@ -9,6 +9,7 @@ To prepare execution on Ubuntu follow steps:
 
 ```
 sudo apt-get nodejs
+sudo apt-get git
 git clone https://github.com/frnjjq/irac-p4-test-ivoox.git
 npm init
 
@@ -16,7 +17,7 @@ npm init
 
 Once you have it installed launch as:
 ```
-nodejs -i 'Lo que quieres buscar' -o pathtothefolder
+nodejs -i 'Search String' -o pathtothefolder
 
 // For example
 nodejs -i 'La Vida Moderna' -o ~/podcasts

@@ -4,7 +4,8 @@
   "description": "Test for P4 of IRAC.",
   "main": "index.js",
   "scripts": {
-    "run": "nodejs index.js -i something -o ./test/",
+    "run1": "nodejs index.js -i 'La Vida Moderna es predecir que va a llover porque el wifi te va lento' -o ./testresult/",
+    "run2": "nodejs index.js -i 'La Vida Moderna' -o ./testresult/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/frnjjq/irac-p4-test-ivoox#readme",
   "dependencies": {
-    "node-ivoox": "^1.1.0",
+    "node-ivoox": "^1.1.1",
     "request": "^2.81.0"
   }
 }
